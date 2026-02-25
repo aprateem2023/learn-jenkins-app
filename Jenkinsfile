@@ -1,10 +1,5 @@
 pipeline {
-    agent {
-        docker {
-      image 'docker:24.0.5'
-      args '-v /var/run/docker.sock:/var/run/docker.sock'
-    }
-    }
+    agent any
 
     environment {
         NETLIFY_SITE_ID = 'a1c7dc12-0dfd-4d9b-a4e3-e74e7900d7ac'
