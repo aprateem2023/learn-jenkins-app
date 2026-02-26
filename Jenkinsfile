@@ -93,7 +93,7 @@ pipeline {
             }
         }
 
-        stage('Deploy staging') {
+        /*stage('Deploy staging') {
                     agent {
                         docker {
                             image 'my-playwright'
@@ -144,6 +144,6 @@ pipeline {
                     publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'playwright-report', reportFiles: 'index.html', reportName: 'Playwright E2E Prod', reportTitles: '', useWrapperFileDirectly: true])
                 }
             }
-        }
+        }*/
     }
 }
