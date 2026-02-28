@@ -1,3 +1,3 @@
-FROM amazon/aws-cli
+FROM amazonlinux:2023
  
 RUN yum update -y && yum install -y docker jq && yum clean all
