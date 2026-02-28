@@ -7,6 +7,7 @@ pipeline {
         AWS_ECS_CLUSTER = 'learnJenkinsApp-Cluster-Prod'
         AWS_ECS_SERVICE_PROD = 'LearnJenkinsApp-Service-Prod'
         AWS_ECS_TD_PROD = 'LearnJenkinsApp-TaskDefinition-Prod'
+        DOCKER_API_VERSION = '1.44'
     }
 
     stages {
