@@ -5,7 +5,7 @@ pipeline {
         
         stage('Build Docker Image') {
             steps {
-                sh 'docker build --no-cache -f ci/Dockerfile-aws-cli -t my-aws-cli .'
+                sh 'docker build -f ci/Dockerfile-aws-cli -t my-aws-cli .'
                 sh 'docker build -f ci/Dockerfile-playwright -t my-playwright .'
             }
         }
