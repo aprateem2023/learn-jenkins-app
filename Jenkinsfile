@@ -42,7 +42,7 @@ pipeline {
 
             steps {
                 sh '''
-                    docker --version
+                    docker version
                     docker build -t myjenkinsapp .
                 '''
             }
