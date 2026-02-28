@@ -42,7 +42,7 @@ pipeline {
 
             steps {
                 sh '''
-                    dnf install docker
+                    dnf install docker -y
                     docker --version
                     docker build -t myjenkinsapp .
                 '''
