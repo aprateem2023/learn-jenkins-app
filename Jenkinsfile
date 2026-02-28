@@ -34,7 +34,7 @@ pipeline {
 
             agent {
                 docker {
-                    image 'amazonlinux:2'
+                    image 'amazonlinux:2023'
                     reuseNode true
                     args "-u root -v /var/run/docker.sock:/var/run/docker.sock --entrypoint=''"
                 }
@@ -43,6 +43,7 @@ pipeline {
             steps {
                 sh '''
                     amazon-linux-extras install docker
+                    docker --version
                     docker build -t myjenkinsapp .
                 '''
             }
