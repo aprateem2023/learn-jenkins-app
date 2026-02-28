@@ -36,7 +36,7 @@ pipeline {
                 docker {
                     image 'amazonlinux:2'
                     reuseNode true
-                    args "-u root --entrypoint=''"
+                    args "-u root -v /var/run/docker.sock:/var/run/docker.sock --entrypoint=''"
                 }
             }
 
